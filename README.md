@@ -374,13 +374,14 @@ If there are numerous results, narrow it further down with:
 
 ## Cloud Services & Online Dev Tools
 
-### AWS
+### AWS S3 Buckets
 
-- `site:"s3-external-1.amazonaws.com" AND intext:CONFIDENTIAL`
-- `site:"s3.amazonaws.com" AND intext:CONFIDENTIAL`
-- `site:"s3.dualstack.us-east-1.amazonaws.com" AND intext:CONFIDENTIAL`
+- `intext:[TARGET] AND (site:"s3-external-1.amazonaws.com" | site:"s3.amazonaws.com")`
 
-Make sure to check the various regions.
+Make sure to check the various regions:
+
+- `intext:[TARGET] AND (site:s3.af-south-1.amazonaws.com | site:s3.ap-east-1.amazonaws.com | site:s3.ap-northeast-1.amazonaws.com | site:s3.ap-northeast-2.amazonaws.com | site:s3.ap-northeast-3.amazonaws.com | site:s3.ap-south-1.amazonaws.com | site:s3.ap-south-2.amazonaws.com | site:s3.ap-southeast-1.amazonaws.com | site:s3.ap-southeast-2.amazonaws.com | site:s3.ap-southeast-3.amazonaws.com | site:s3.ap-southeast-4.amazonaws.com | site:s3.ca-central-1.amazonaws.com | site:s3.eu-central-1.amazonaws.com | site:s3.eu-central-2.amazonaws.com | site:s3.eu-north-1.amazonaws.com | site:s3.eu-south-1.amazonaws.com | site:s3.eu-south-2.amazonaws.com | site:s3.eu-west-1.amazonaws.com | site:s3.eu-west-2.amazonaws.com | site:s3.eu-west-3.amazonaws.com | site:s3.me-central-1.amazonaws.com | site:s3.me-south-1.amazonaws.com | site:s3.sa-east-1.amazonaws.com | site:s3.us-east-1.amazonaws.com | site:s3.us-east-2.amazonaws.com | site:s3.us-gov-east-1.amazonaws.com | site:s3.us-gov-west-1.amazonaws.com | site:s3.us-west-1.amazonaws.com | site:s3.us-west-2.amazonaws.com)`
+- `intext:[TARGET] AND (site:s3.dualstack.af-south-1.amazonaws.com | site:s3.dualstack.ap-east-1.amazonaws.com | site:s3.dualstack.ap-northeast-1.amazonaws.com | site:s3.dualstack.ap-northeast-2.amazonaws.com | site:s3.dualstack.ap-northeast-3.amazonaws.com | site:s3.dualstack.ap-south-1.amazonaws.com | site:s3.dualstack.ap-south-2.amazonaws.com | site:s3.dualstack.ap-southeast-1.amazonaws.com | site:s3.dualstack.ap-southeast-2.amazonaws.com | site:s3.dualstack.ap-southeast-3.amazonaws.com | site:s3.dualstack.ap-southeast-4.amazonaws.com | site:s3.dualstack.ca-central-1.amazonaws.com | site:s3.dualstack.eu-central-1.amazonaws.com | site:s3.dualstack.eu-central-2.amazonaws.com | site:s3.dualstack.eu-north-1.amazonaws.com | site:s3.dualstack.eu-south-1.amazonaws.com | site:s3.dualstack.eu-south-2.amazonaws.com | site:s3.dualstack.eu-west-1.amazonaws.com | site:s3.dualstack.eu-west-2.amazonaws.com | site:s3.dualstack.eu-west-3.amazonaws.com | site:s3.dualstack.me-central-1.amazonaws.com | site:s3.dualstack.me-south-1.amazonaws.com | site:s3.dualstack.sa-east-1.amazonaws.com | site:s3.dualstack.us-east-1.amazonaws.com | site:s3.dualstack.us-east-2.amazonaws.com | site:s3.dualstack.us-gov-east-1.amazonaws.com | site:s3.dualstack.us-gov-west-1.amazonaws.com | site:s3.dualstack.us-west-1.amazonaws.com | site:s3.dualstack.us-west-2.amazonaws.com)`
 
 ### Azure
 
