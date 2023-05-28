@@ -16,7 +16,7 @@
 
 ### .git folder
 
-- `inurl:\"/.git\" [TARGET] -site:github.com`
+- `inurl:"/.git" [TARGET] -site:github.com`
 
 ### Exposed documents
 
@@ -24,11 +24,11 @@
 
 ### SQL errors
 
-- `site:[TARGET] AND (intext:\"sql syntax near\" | intext:\"syntax error has occurred\" | intext:\"incorrect syntax near\" | intext:\"unexpected end of SQL command\" | intext:\"Warning: mysql_connect()\" | intext:\"Warning: mysql_query()\" | intext:\"Warning: pg_connect()\")`
+- `site:[TARGET] AND (intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()")`
 
 ### PHP errors
 
-- `site:[TARGET] AND (\"PHP Parse error\" | \"PHP Warning\" | \"PHP Error\")`
+- `site:[TARGET] AND ("PHP Parse error" | "PHP Warning" | "PHP Error")`
 - `site:[TARGET] "Index of" inurl:phpmyadmin`
 
 ### Login pages
@@ -51,7 +51,7 @@
 
 ### Other files
 
-- `site:[TARGET] AND (intitle:index.of | ext:log | ext:php intitle:phpinfo \"published by the PHP Group\" | inurl:shell | inurl:backdoor | inurl:wso | inurl:cmd | shadow | passwd | boot.ini | inurl:backdoor | inurl:readme | inurl:license | inurl:install | inurl:setup | inurl:config | inurl:\"/phpinfo.php\" | inurl:\".htaccess\" | ext:swf)`
+- `site:[TARGET] AND (intitle:index.of | ext:log | ext:php intitle:phpinfo "published by the PHP Group" | inurl:shell | inurl:backdoor | inurl:wso | inurl:cmd | shadow | passwd | boot.ini | inurl:backdoor | inurl:readme | inurl:license | inurl:install | inurl:setup | inurl:config | inurl:"/phpinfo.php" | inurl:".htaccess" | ext:swf)`
 
 - `site:[TARGET] AND (ext:env | ext:log | ext:sql | ext:yml | ext:pem | ext:ini | ext:logs | ext:ibd | ext:txt | ext:php.txt | ext:old | ext:key | ext:frm | ext:bak | ext:zip | ext:swp | ext:conf | ext:db | ext:config | ext:ovpn | ext:svn | ext:git | ext:cfg | ext:exs | ext:dbf | ext:mdb | ext:pem | ext:pub | ext:yaml | ext:zip | ext:asc | ext:xls | ext:xlsx")`
 
@@ -413,6 +413,6 @@ GitHub, GitLab, BB online dev enviroments?
 - `site:jfrog.io AND intext:"[TARGET]"`
 - ` [TARGET]`
 - `intitle:traefik inurl:8080/dashboard [TARGET]`
-- `intitle:\"Dashboard [Jenkins]\" [TARGET]`
+- `intitle:"Dashboard [Jenkins]" [TARGET]`
 - `(site:bitpaste.app | site:codebeautify.org | site:codepad.co | site:codepad.co |site:ideone.com | site:codepad.org | site:codepen.io | site:codeshare.io | site:coggle.it | site:controlc.com | site:dotnetfiddle.net | site:dpaste.com | site:dpaste.org | site:gitter.im | site:hastebin.com | site:heypasteit.com | site:ide.geeksforgeeks.org | site:ideone.com | site:jsdelivr.com | site:jsdelivr.net | site:jsfiddle.net) AND "[TARGET]"`
 - `(site:justpaste.it | site:libraries.io | site:npmjs.com | site:npm.runit.com | site:npm.runkit.com | site:papaly.com | site:paste2.org | site:pastebin.com | site:paste.debian.net | site:pastehtml.com | site:paste.org | site:phpfiddle.org | site:prezi.com | site:productforums.google.com | site:repl.it | site:replt.it | site:scribd.com | site:sharecode.io | site:snipplr.com | site:trello.com | site:ycombinator.com) AND "[TARGET]"`
