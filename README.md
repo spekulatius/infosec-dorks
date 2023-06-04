@@ -1,4 +1,4 @@
-# A Personal collection of InfoSec Dorks
+# A Personal Collection of InfoSec Dorks
 
 ## Surface Discovery
 
