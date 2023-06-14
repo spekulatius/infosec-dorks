@@ -6,25 +6,37 @@
 
 - `site:[TARGET] ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:env | ext:ini`
 
+   This dork searches for configuration files on the specified target site. Configuration files often contain sensitive information such as database credentials, API keys, and server configurations.
+
 ### Database files
 
 - `site:[TARGET] ext:sql | ext:db | ext:dbf | ext:mdb | ext:sql.gz | ext:sql.gz | ext:db.gz | ext:db.gz`
+
+  This dork helps to find database files on the specified target site. Database files may contain valuable data and their exposure can lead to unauthorized access or data breaches.
 
 ### Backup files
 
 - `site:[TARGET] ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup`
 
+  This dork is useful for discovering backup files on the specified target site. Backup files are often created to store previous versions of files or data, but if they are exposed, they may contain sensitive or outdated information.
+
 ### .git folder
 
 - `inurl:"/.git" [TARGET] -site:github.com`
+
+  This dork searches for instances of the ".git" folder on the specified target site, excluding results from GitHub. The .git folder contains version control information and can potentially expose sensitive source code and configuration details, leading to unauthorized access or code leaks.
 
 ### Exposed documents
 
 - `site:[TARGET] ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv`
 
+  This dork helps to find various document file types on the specified target site. Exposed documents may contain sensitive information such as passwords, intellectual property, or confidential data.
+
 ### SQL errors
 
 - `site:[TARGET] AND (intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()")`
+
+   This dork searches for SQL errors on the specified target site. The presence of these errors in web pages may indicate vulnerabilities that can be exploited by attackers to gain unauthorized access to databases or execute malicious SQL queries.
 
 ### PHP errors
 
