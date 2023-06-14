@@ -6,13 +6,19 @@
 
 - `site:[TARGET] ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:env | ext:ini`
 
+   This dork searches for configuration files on the specified target site. Configuration files often contain sensitive information such as database credentials, API keys, and server configurations.
+
 ### Database files
 
 - `site:[TARGET] ext:sql | ext:db | ext:dbf | ext:mdb | ext:sql.gz | ext:sql.gz | ext:db.gz | ext:db.gz`
 
+  This dork helps to find database files on the specified target site. Database files may contain valuable data and their exposure can lead to unauthorized access or data breaches.
+
 ### Backup files
 
 - `site:[TARGET] ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup`
+
+  This dork is useful for discovering backup files on the specified target site. Backup files are often created to store previous versions of files or data, but if they are exposed, they may contain sensitive or outdated information.
 
 ### .git folder
 
