@@ -1,0 +1,8 @@
+{
+  "name": "InfoSec Dorks - Recon & Security Auditing Explorer",
+  "description": "Comprehensive interactive directory and search query generator for security researchers, bug bounty hunters, and sysadmins to identify surface exposure, sensitive files, credentials, and cloud storage leaks.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
